@@ -18,7 +18,7 @@ Throughout the project, I will be focusing on the following technologies:
 
 Each technology will have its dedicated folder within this repository, containing code samples, tutorials, and learning resources.
 
-###Technologies Covered
+### Technologies Covered
 
 #### GIT
         Basic git commands and workflow
