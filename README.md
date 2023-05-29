@@ -64,7 +64,8 @@ To get started with this project, follow these steps:
     Follow the README.md file within each technology folder for more specific instructions.
 
 Feel free to experiment, modify, and build upon the code provided in this repository according to your learning goals.
-Project Structure
+
+### Project Structure
 
 The repository is structured as follows:
 
