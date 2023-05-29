@@ -1,0 +1,1 @@
+Contributions to this repository are not currently accepted, as it is intended for personal learning purposes.
