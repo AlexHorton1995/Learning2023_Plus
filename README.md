@@ -105,6 +105,7 @@ The repository is structured as follows:
 
 
 Feel free to explore each folder according to your interest and learning objectives.
-Contributing
+
+### Contributing
 
 Contributions to this repository are not currently accepted, as it is intended for personal learning purposes
