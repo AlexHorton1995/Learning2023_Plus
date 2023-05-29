@@ -51,17 +51,11 @@ Technologies Covered
 
 To get started with this project, follow these steps:
 
-    Clone the repository:
+Clone the repository:
 
-    bash
+git clone https://github.com/your-username/self-guided-learning.git
 
-    git clone https://github.com/your-username/self-guided-learning.git
-
-    Navigate to the relevant technology folder of your interest.
-
-    Explore the provided code samples, tutorials, and learning resources.
-
-    Follow the README.md file within each technology folder for more specific instructions.
+Navigate to the relevant technology folder of your interest. Explore the provided code samples, tutorials, and learning resources. Follow the README.md file within each technology folder for more specific instructions.
 
 Feel free to experiment, modify, and build upon the code provided in this repository according to your learning goals.
 
