@@ -1,20 +1,10 @@
-# Learning2023_Plus
-Personal repository of self propelled learning in 2023 onward!
+# Learning2023_Plus - A Personal repository of self propelled learning in 2023 onward!
 
-Self-Guided Learning Project
+## A Self-Guided Learning Project
 
 Welcome to my self-guided learning project repository! This repository serves as a personal project for my journey of learning various technologies and concepts. The main focus of this project is on GIT, Microsoft SQL Server, C#, Rest APIs, and Generative AI using Chat GPT.
 
-Table of Contents
-
-    Project Overview
-    Technologies Covered
-    Getting Started
-    Project Structure
-    Contributing
-    License
-
-Project Overview
+### Project Overview
 
 The purpose of this project is to document my progress and learning experiences while exploring different technologies. I believe in the power of self-guided learning, and this repository acts as a journal of my journey.
 
@@ -29,35 +19,35 @@ Throughout the project, I will be focusing on the following technologies:
 Each technology will have its dedicated folder within this repository, containing code samples, tutorials, and learning resources.
 Technologies Covered
 
-    GIT
+#### GIT
         Basic git commands and workflow
         Branching, merging, and resolving conflicts
         Collaborating with others using git
 
-    Microsoft SQL Server
+#### Microsoft SQL Server
         Database design and normalization
         SQL queries, CRUD operations, and advanced concepts
         Database administration and performance optimization
 
-    C#
+#### C#
         Syntax, data types, and control structures
         Object-oriented programming principles
         Building console applications and GUIs
         Interacting with databases, REST APIs, and generative AI models
 
-    Rest APIs
+#### Rest APIs
         Understanding RESTful architecture
         Designing and implementing RESTful APIs
         Authentication and authorization
         Consuming APIs using various programming languages and tools
 
-    Generative AI (Chat GPT)
+#### Generative AI (Chat GPT)
         Understanding the principles of generative AI
         Working with pre-trained GPT models
         Fine-tuning GPT models for specific tasks
         Building chatbots and conversational agents
 
-Getting Started
+### Getting Started
 
 To get started with this project, follow these steps:
 
