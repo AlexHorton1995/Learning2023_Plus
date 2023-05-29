@@ -1,0 +1,25 @@
+1a. git clone - clone the repo from the remote repository (server) to your local machine.
+	* Should only have to do this one time (other factors aside)
+
+1b. git checkout master - this puts you back on the master branch. 
+	* Only do this if you have already cloned down the repo you will be using.
+
+2. git branch - creates a working branch in which YOU will do your work.  
+	* example: git branch WorkingOnAssignment
+
+3. git checkout <branch> - checkout the branch you just created in step number 2 :)
+	* git checkout WorkingOnAssignment
+	
+4. Perform all of your changes.
+
+5. git status - this allows you to see what you've changed on your branch that is different from the master branch.
+	* git status (changes will show in red)
+	
+6. git add (either do individual filenames OR git add *) 
+	* the '*' wildcard adds all changed files you've made.
+	
+7. git commit - commits all of your staged changes to you LOCAL repository.
+
+8. git push - this pushes your LOCAL branch up to the remote repository.
+	* if you've never pushed a branch, you'll need to do git push --set-upstream origin <branch name>
+
