@@ -69,11 +69,45 @@ Feel free to experiment, modify, and build upon the code provided in this reposi
 
 The repository is structured as follows:
 
-    /GIT: Contains GIT-related code samples, tutorials, and learning resources.
-    /Microsoft SQL Server: Contains Microsoft SQL Server-related code samples, tutorials, and learning resources.
-    /C#: Contains C#-related code samples, tutorials, and learning resources.
-    /Rest APIs: Contains Rest APIs-related code samples, tutorials, and learning resources.
-    /Generative AI (Chat GPT): Contains Generative AI-related code samples, tutorials, and learning resources.
+- GIT/
+  - README.md
+  - Code/
+    - git_sample.txt
+  - Resources/
+    - git_tutorial.pdf
+
+- SQL Server/
+  - README.md
+  - Code/
+    - sql_sample.sql
+  - Resources/
+    - sql_reference_guide.pdf
+
+- C#/
+  - README.md
+  - Code/
+    - csharp_sample.cs
+  - Resources/
+    - csharp_tutorial.pdf
+
+- REST APIs/
+  - README.md
+  - Code/
+    - api_sample.cs
+  - Resources/
+    - api_documentation.pdf
+
+- Generative AI (Chat GPT)/
+  - README.md
+  - Code/
+    - chat_gpt_sample.cs
+  - Resources/
+    - ai_research_papers.pdf
+
+- LICENSE
+- CONTRIBUTING.md
+- .gitignore
+
 
 Feel free to explore each folder according to your interest and learning objectives.
 Contributing
