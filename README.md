@@ -17,6 +17,7 @@ Throughout the project, I will be focusing on the following technologies:
     Generative AI (Chat GPT): Exploring the fascinating world of generative AI with a focus on Chat GPT models.
 
 Each technology will have its dedicated folder within this repository, containing code samples, tutorials, and learning resources.
+
 Technologies Covered
 
 #### GIT
