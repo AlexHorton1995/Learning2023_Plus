@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "CBAccountIntake": {
+      "commandName": "Project",
+      "commandLineArgs": "Date:20230602 FileName:.\\TestFiles\\CBIntake_20230602.csv",
+      "workingDirectory": "D:\\Learning2023_Plus\\C#"
+    }
+  }
+}
