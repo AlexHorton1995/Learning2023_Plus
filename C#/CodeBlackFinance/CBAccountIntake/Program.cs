@@ -1,14 +1,15 @@
 ﻿using CBAccountIntake.Models;
-using System.IO;
-using System.Runtime.CompilerServices;
+using System.Data;
+using CodeBlackFinance;
 
 namespace CBAccountIntake
 {
     internal class Program
     {
-        internal static Settings Settings { get; set; }
-
-        static Program() { }
+        internal static Settings? Settings { get; set; }
+        internal static ICodeBlackTables? CBData { get; set; }
+        internal static IDataAccess? DataAccess { get; set; }
+        internal static ICBVerification? Verification { get; set; }
 
         public Program() { }
 
@@ -17,10 +18,15 @@ namespace CBAccountIntake
             Console.WriteLine("Hello, World!");
 
             GetFileInfo(args);
-
-            if (FileOperations())
+            var dt = FileOperations();
+            if (dt == null)
             {
+                //say there's an error
                 Console.WriteLine();
+            }
+            else
+            {
+                CommitData(dt);
             }
         }
 
@@ -28,9 +34,12 @@ namespace CBAccountIntake
         {
             Settings = new Settings();
             Settings.LoadSettings(args);
+            DataAccess = new DataAccess();
+            CBData = new CodeBlackTables();
+            Verification = new CBVerification();
         }
 
-        public static bool FileOperations()
+        public static DataTable? FileOperations()
         {
             List<FileData> customerInfo = new List<FileData>();
             FileData? customer;
@@ -39,16 +48,20 @@ namespace CBAccountIntake
             {
                 //first, check to see if file exists
                 FileInfo fi = new FileInfo(Settings?.FilePath);
+                DataTable? dt = CBData?.CreateTempDataTable();
 
                 var file = fi.FullName;
 
                 if (!File.Exists(file))
                 {
                     //file does not exist
-                    return false;
+                    return null;
                 }
                 else
                 {
+                    CBData = new CodeBlackTables();
+
+
                     var fileData = File.ReadAllLines(file);
 
                     for (int i = 1; i < fileData.Length; i++)
@@ -59,20 +72,46 @@ namespace CBAccountIntake
                         if (data.Length > 0)
                         {
                             customer.Parse(data);
-                            customerInfo.Add(customer);
+
+                            if (Verification.CardValidated(customer.AccountNumber))
+                                CBData.PopulateDataTable(dt, customer);
                         }
                     }
 
+                    Console.WriteLine();
+                    return dt;
                 }
-
-                return true;
-
             }
             catch (Exception ex)
             {
-                return false;
+                return null;
             }
         }
 
+        public static bool CommitData(DataTable? dt)
+        {
+            try
+            {
+                if (!DataAccess.CreateTempTable())
+                {
+                    return false;
+                }
+                else
+                {
+                    bool success = DataAccess.BulkCopyDataTable(dt);
+                    success = success && DataAccess.InsertAccounts();
+                    success = success && DataAccess.InsertMembers();
+                    DataAccess.DropTempTable();
+                }
+
+
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+
+        }
     }
 }

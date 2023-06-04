@@ -17,6 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\CBAccountIntake\CBAccountIntake.csproj" />
     <ProjectReference Include="..\CodeBlackFinance\CodeBlackFinance.csproj" />
   </ItemGroup>
 
