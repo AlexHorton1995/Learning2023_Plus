@@ -1,6 +1,4 @@
 ﻿using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.Logging;
-using System.Runtime.CompilerServices;
 
 namespace MoveEM
 {
